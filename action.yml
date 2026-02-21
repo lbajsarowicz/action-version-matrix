@@ -17,5 +17,8 @@ outputs:
   matrix:
     description: 'JSON string for strategy.matrix: ${{ fromJson(...) }}'
 runs:
-  using: 'node20'
+  using: 'node24'
   main: 'dist/index.js'
+branding:
+  icon: 'grid'
+  color: 'orange'
