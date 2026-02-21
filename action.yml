@@ -1,0 +1,21 @@
+name: 'Version Matrix'
+description: 'Generate Magento/Adobe Commerce CI matrix from magento.watch API'
+inputs:
+  distribution:
+    description: 'API distribution: magento-community, magento-commerce, mage-os'
+    required: false
+    default: 'magento-community'
+  kind:
+    description: 'latest = latest patch per minor line, all = every supported patch, custom = user-specified'
+    required: false
+    default: 'latest'
+  custom_versions:
+    description: 'Comma-separated versions (only when kind: custom)'
+    required: false
+    default: ''
+outputs:
+  matrix:
+    description: 'JSON string for strategy.matrix: ${{ fromJson(...) }}'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'

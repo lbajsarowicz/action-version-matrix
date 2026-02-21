@@ -1,0 +1,20 @@
+{
+  "name": "action-version-matrix",
+  "version": "1.0.0",
+  "description": "GitHub Action to generate Magento/Adobe Commerce CI matrix from magento.watch API",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/index.ts -o dist --source-map --license licenses.txt",
+    "test": "vitest run",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.3",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  },
+  "license": "MIT"
+}

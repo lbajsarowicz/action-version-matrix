@@ -1,0 +1,10 @@
+node_modules/
+coverage/
+*.tsbuildinfo
+.env
+
+# ncc build artifacts we don't need in git
+dist/*.d.ts
+dist/*.map
+dist/sourcemap-register.js
+dist/licenses.txt
