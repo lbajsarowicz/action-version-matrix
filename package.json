@@ -1,6 +1,6 @@
 {
   "name": "action-version-matrix",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "GitHub Action to generate Magento/Adobe Commerce CI matrix from magento.watch API",
   "type": "module",
   "main": "dist/index.js",
